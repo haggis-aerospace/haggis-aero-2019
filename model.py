@@ -36,7 +36,7 @@ InceptionHeightConvergence = Dense(setting.InceptionHeightConvergencenoofunits, 
 Image_output = Dense(setting.aux_output_shape, activation='softplus', name='Image_output')(InceptionHeightConvergence)
 
 ##Height Input Layer Definination
-Height_input = Input(shape=(1,1), name='aux_input')
+Height_input = Input(shape=setting.aux_input_shape, name='aux_input')
 
 ##Convergergence Definination
 InceptionHeightConverged = concatenate([InceptionHeightConvergence, Height_input])

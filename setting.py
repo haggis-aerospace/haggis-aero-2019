@@ -1,10 +1,9 @@
 from keras import optimizers
 
 
-camera_index = 0
 image_shape = (3280, 2464, 3) # image size
 aux_output_shape = (37,1) # alpha-numeric entries + null in one-hot-array
-
+aux_input_shape=(1, 1)
 
 #tower settings
 #tower 1
