@@ -3,6 +3,8 @@ from keras import optimizers
 
 camera_index = 0
 image_shape = (3280, 2464, 3) # image size
+aux_output_shape = (37,1) # alpha-numeric entries + null in one-hot-array
+
 
 #tower settings
 #tower 1
@@ -29,6 +31,23 @@ tower2activationl3='relu'
 #dropout percentage
 dropoutpercentagetower2=0.5
 
+#tower 3
+#no of units
+tower3unitsl1=2048
+tower3unitsl2=1024
+tower3unitsl3=512
+#activation
+tower3activationl1='relu'
+tower3activationl2='relu'
+tower3activationl3='relu'
+#dropout percentage
+dropoutpercentagetower3=0.5
+
+#Inception Height Convergence layer
+#units
+InceptionHeightConvergencenoofunits=512
+#Activation
+InceptionHeightConvergenceactivation='relu'
 
 alpha = 1.2 ## Rel_coords_out_act layer's activation function parameter in model.py
 dropoutpercentagelayer1 = 0.4 ## Dropout percentage in the Post Inception Block's layer 1 in model.py
