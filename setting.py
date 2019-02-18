@@ -2,7 +2,11 @@ from keras import optimizers
 
 
 camera_index = 0
-image_shape = (480, 640, 3)
+image_shape = (3280, 2464, 3) # image size
+
+#
+
+
 alpha = 1.2 ## Rel_coords_out_act layer's activation function parameter in model.py
 dropoutpercentagelayer1 = 0.4 ## Dropout percentage in the Post Inception Block's layer 1 in model.py
 dropoutpercentagelayer2 = 0.4 ## Dropout percentage in the Post Inception Block's layer 2 in model.py
