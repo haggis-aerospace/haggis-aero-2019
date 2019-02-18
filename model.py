@@ -1,3 +1,4 @@
+from tensorflow import keras as keras
 from keras.layers import Input, Conv2D, Dense, Dropout, Activation, Flatten, MaxPooling2D, concatenate, ELU
 from keras.models import Model
 import setting
@@ -7,11 +8,15 @@ Image_input = Input(shape=setting.image_shape, dtype='float32', name='main_input
 
 ## Inception Block Start
 
-tower_1 = Conv2D(2048, (1, 1), padding='same', activation='relu')(Image_input)
-tower_1 = Conv2D(1024, (3, 3), padding='same', activation='relu')(tower_1)
+tower_1 = Conv2D(setting.tower1unitsl1, (1, 1), padding='same', activation=setting.tower1activationl1)(Image_input)
+tower_1 = Conv2D(setting.tower1unitsl2, (3, 3), padding='same', activation=setting.tower1activationl2)(tower_1)
+tower_1 = Dropout(setting.dropoutpercentagetower1)(tower_1)
+tower_1 = Conv2D(setting.tower1unitsl3, (2, 2), padding='same', activation=setting.tower1activationl3)(tower_1)
 
-tower_2 = Conv2D(2048, (1, 1), padding='same', activation='relu')(Image_input)
-tower_2 = Conv2D(1024, (5, 5), padding='same', activation='relu')(tower_2)
+tower_2 = Conv2D(setting.tower2unitsl1, (7, 7), padding='same', activation=setting.tower2activationl1)(Image_input)
+tower_2 = Dropout(setting.dropoutpercentagetower1)(tower_2)
+tower_2 = Conv2D(setting.tower2unitsl2, (5, 5), padding='same', activation=setting.tower2activationl2)(tower_2)
+tower_2 = Conv2D(setting.tower1unitsl3, (2, 2), padding='same', activation=setting.tower2activationl3)(tower_2)
 
 tower_3 = MaxPooling2D((3, 3), strides=(1, 1), padding='same')(Image_input)
 tower_3 = Conv2D(1024, (1, 1), padding='same', activation='relu')(tower_3)

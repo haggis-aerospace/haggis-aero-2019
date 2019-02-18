@@ -4,7 +4,30 @@ from keras import optimizers
 camera_index = 0
 image_shape = (3280, 2464, 3) # image size
 
-#
+#tower settings
+#tower 1
+#no of units
+tower1unitsl1=2048
+tower1unitsl2=1024
+tower1unitsl3=512
+#activation
+tower1activationl1='relu'
+tower1activationl2='relu'
+tower1activationl3='relu'
+#dropout percentage
+dropoutpercentagetower1=0.3
+
+#tower 2
+#no of units
+tower2unitsl1=2048
+tower2unitsl2=1024
+tower2unitsl3=512
+#activation
+tower2activationl1='relu'
+tower2activationl2='relu'
+tower2activationl3='relu'
+#dropout percentage
+dropoutpercentagetower2=0.5
 
 
 alpha = 1.2 ## Rel_coords_out_act layer's activation function parameter in model.py
