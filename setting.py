@@ -4,7 +4,7 @@ from keras import optimizers
 image_shape = (3280, 2464, 3) # image size
 aux_output_shape = (37,1) # alpha-numeric entries + null in one-hot-array
 aux_input_shape=(1, 1)
-
+main_output_shape=(2,1)
 #tower settings
 #tower 1
 #no of units
@@ -48,13 +48,28 @@ InceptionHeightConvergencenoofunits=512
 #Activation
 InceptionHeightConvergenceactivation='relu'
 
-alpha = 1.2 ## Rel_coords_out_act layer's activation function parameter in model.py
+#Post Inception Dense Block
+#no of units
+Denselayer1noofunits=32
+Denselayer2noofunits=32
+Denselayer3noofunits=32
+Denselayer4noofunits=32
+#Activation
+Denselayer1activation='relu'
+Denselayer2activation='relu'
+Denselayer3activation='relu'
+Denselayer4activation='relu'
+
+
+#dropout percentage
 dropoutpercentagelayer1 = 0.4 ## Dropout percentage in the Post Inception Block's layer 1 in model.py
 dropoutpercentagelayer2 = 0.4 ## Dropout percentage in the Post Inception Block's layer 2 in model.py
 dropoutpercentagelayer3 = 0.4 ## Dropout percentage in the Post Inception Block's layer 3 in model.py
 dropoutpercentagelayer4 = 0.4 ## Dropout percentage in the Post Inception Block's layer 4 in model.py
 
 
+
+alpha = 1.2 ## Rel_coords_out_act layer's activation function parameter in model.py
 
 #optimizer parameters
 

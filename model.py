@@ -42,16 +42,16 @@ Height_input = Input(shape=setting.aux_input_shape, name='aux_input')
 InceptionHeightConverged = concatenate([InceptionHeightConvergence, Height_input])
 
 ## Post Inception Dense Block Start
-InceptionHeightDenseLayer1 = Dense(32 ,activation = 'relu')(InceptionHeightConverged)
+InceptionHeightDenseLayer1 = Dense(setting.Denselayer1noofunits ,activation = setting.Denselayer1activation)(InceptionHeightConverged)
 InceptionHeightDenseLayer1 = Dropout(setting.dropoutpercentagelayer1)(InceptionHeightDenseLayer1)
 
-InceptionHeightDenseLayer2 = Dense(32 ,activation = 'relu')(InceptionHeightDenseLayer1)
+InceptionHeightDenseLayer2 = Dense(setting.Denselayer2noofunits ,activation = setting.Denselayer2activation)(InceptionHeightDenseLayer1)
 InceptionHeightDenseLayer2 = Dropout(setting.dropoutpercentagelayer2)(InceptionHeightDenseLayer2)
 
-InceptionHeightDenseLayer3 = Dense(32 ,activation = 'relu')(InceptionHeightDenseLayer2)
+InceptionHeightDenseLayer3 = Dense(setting.Denselayer3noofunits ,activation = setting.Denselayer3activation)(InceptionHeightDenseLayer2)
 InceptionHeightDenseLayer3 = Dropout(setting.dropoutpercentagelayer3)(InceptionHeightDenseLayer3)
 
-InceptionHeightDenseLayer4 = Dense(32 ,activation = 'relu')(InceptionHeightDenseLayer3)
+InceptionHeightDenseLayer4 = Dense(setting.Denselayer4noofunits ,activation = setting.Denselayer4activation)(InceptionHeightDenseLayer3)
 InceptionHeightDenseLayer4 = Dropout(setting.dropoutpercentagelayer4)(InceptionHeightDenseLayer4)
 ## Post Inception Dense Block End
 
