@@ -1,5 +1,4 @@
-from keras import optimizers
-
+from tensorflow.keras import optimizers
 
 image_shape = (3280, 2464, 3) # image size
 aux_output_shape = (37,1) # alpha-numeric entries + null in one-hot-array
