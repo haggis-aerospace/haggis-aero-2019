@@ -1,9 +1,9 @@
 from tensorflow.keras import optimizers
 
-image_shape = (3280, 2464, 3) # image size
-aux_output_shape = (37,1) # alpha-numeric entries + null in one-hot-array
+image_shape = (3,2464,3280) # image size !! might need to fix shape
+aux_output_shape = (1,37) # alpha-numeric entries + null in one-hot-array
 aux_input_shape=(1, 1)
-main_output_shape=(2,1)
+main_output_shape=(1,2)
 #tower settings
 #tower 1
 #no of units
