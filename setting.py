@@ -1,6 +1,6 @@
 from tensorflow.keras import optimizers
 
-image_shape = (3,2464,3280) # image size !! might need to fix shape
+image_shape = (3,1540,2050) # image size !! might need to fix shape
 aux_output_shape = (1,37) # alpha-numeric entries + null in one-hot-array
 aux_input_shape=(1, 1)
 main_output_shape=(1,2)

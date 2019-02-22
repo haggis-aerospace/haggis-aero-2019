@@ -5,7 +5,7 @@ from pprint import pprint
 from tqdm import tqdm
 import random
 
-no_of_samples = 10
+no_of_samples = 1200
 
 
 main_input_shape = (no_of_samples,) + se.image_shape
@@ -15,9 +15,8 @@ main_output_shape = (no_of_samples,) + se.main_output_shape
 
 
 #create a random distribution for the image data
-main_input = np.random.randint(0,255,size=main_input_shape)
-#normalize data
-main_input = main_input/255
+main_input = np.random.randint(0,255,size=main_input_shape, dtype='int32')
+
 
 #create a random one hot array for character recognition
 aux_output = np.zeros(aux_output_shape, dtype='int32')
