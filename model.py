@@ -2,6 +2,10 @@ from tensorflow import keras as keras
 from keras.layers import Input, Conv2D, Dense, Dropout, Activation, Flatten, MaxPooling2D, concatenate, ELU
 from keras.models import Model
 import setting
+from keras import optimizers
+
+from keras.utils import plot_model
+
 
 
 Image_input = Input(shape=setting.image_shape, dtype='float32', name='main_input')
@@ -33,13 +37,14 @@ Flattened_Inception_output = Flatten()(Inception_output)
 InceptionHeightConvergence = Dense(setting.InceptionHeightConvergencenoofunits, activation=setting.InceptionHeightConvergenceactivation)(Flattened_Inception_output)
 
 ## Aux Out Layer
-Image_output = Dense(setting.aux_output_shape, activation='softplus', name='Image_output')(InceptionHeightConvergence)
+Image_output = Dense(1, activation='softplus', name='Image_output')(InceptionHeightConvergence)
 
 ##Height Input Layer Definination
 Height_input = Input(shape=setting.aux_input_shape, name='aux_input')
+Height_Dense = Dense(setting.InceptionHeightConvergencenoofunits, activation = setting.Denselayer1activation)(Height_input)
 
 ##Convergergence Definination
-InceptionHeightConverged = concatenate([InceptionHeightConvergence, Height_input])
+InceptionHeightConverged = concatenate([InceptionHeightConvergence, Height_Dense])
 
 ## Post Inception Dense Block Start
 InceptionHeightDenseLayer1 = Dense(setting.Denselayer1noofunits ,activation = setting.Denselayer1activation)(InceptionHeightConverged)
@@ -59,8 +64,11 @@ Rel_coords_out = Dense(2, name='main_output')(InceptionHeightDenseLayer4)
 Rel_coords_out_act = ELU(alpha=setting.alpha)(Rel_coords_out) ## ELU is a advanced activation function. Documented in keras.io
 
 
-model = Model(inputs=[Image_input, Height_input], outputs=[Image_char_output, Rel_coords_out_act])
+model = Model(inputs=[Image_input, Height_input], outputs=[Image_output, Rel_coords_out_act])
 
+sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 
-model.compile(optimizer=setting.optimizer, loss='binary_crossentropy',
+model.compile(optimizer=sgd, loss='binary_crossentropy',
               loss_weights=[1., 0.2])
+
+plot_model(model, to_file='model.png')

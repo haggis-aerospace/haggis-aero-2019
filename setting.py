@@ -2,7 +2,7 @@ from tensorflow.keras import optimizers
 
 image_shape = (3,720,960) # image size !! might need to fix shape
 aux_output_shape = (1,37) # alpha-numeric entries + null in one-hot-array
-aux_input_shape=(1, 1)
+aux_input_shape=(1,)
 main_output_shape=(1,2)
 #tower settings
 #tower 1
@@ -77,5 +77,7 @@ beta_1 = 0.9
 beta_2 = 0.999
 epsilon = None
 decay = 0.0001
-amsgrad = False
-optimizer=optimizers.Adam(lr=learning_rate, beta_1=beta_1, beta_2=beta_2, epsilon=epsilon, decay=decay, amsgrad=amsgrad) ## optimizer for model in model.py
+amsgrad = True
+#optimizer=optimizers.Adam(lr=learning_rate, beta_1=beta_1, beta_2=beta_2, epsilon=epsilon, decay=decay, amsgrad=amsgrad) ## optimizer for model in model.py
+
+sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
