@@ -74,7 +74,7 @@ model.fit([train_main_input, train_aux_input], [train_aux_output, train_main_out
 # Save model and weights
 if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
-model_path = os.path.join(train_set.save_dir, model_name)
+model_path = os.path.join(train_set.save_dir, train_set.model_name)
 model.save(model_path)
 print('Saved trained model at %s ' % model_path)
 
