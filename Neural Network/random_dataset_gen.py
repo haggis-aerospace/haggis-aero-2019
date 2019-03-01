@@ -8,7 +8,7 @@ import gc
 
 gc.enable()
 
-no_of_samples = 1000
+no_of_samples = 100
 
 
 main_input_shape = (no_of_samples,) + se.image_shape

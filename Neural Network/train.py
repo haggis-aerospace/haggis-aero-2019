@@ -65,7 +65,7 @@ train_aux_output = aux_output[int(len(main_input)*train_set.validation_split):]
 ## TODO write code to not import the computation graph in the event of contuining a training session
 import model
 
-model.fit([train_main_input, train_aux_input], [train_aux_output, train_main_output],
+model.model.fit([train_main_input, train_aux_input], [train_aux_output, train_main_output],
           batch_size=train_set.batch_size,
           epochs=train_set.epochs,
           validation_data=([val_main_input,val_aux_input], [val_aux_output,val_main_output]),
@@ -75,10 +75,10 @@ model.fit([train_main_input, train_aux_input], [train_aux_output, train_main_out
 if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
 model_path = os.path.join(train_set.save_dir, train_set.model_name)
-model.save(model_path)
+model.model.save(model_path)
 print('Saved trained model at %s ' % model_path)
 
 # Score trained model.
-scores = model.evaluate(x_test, y_test, verbose=1)
+scores = model.model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
