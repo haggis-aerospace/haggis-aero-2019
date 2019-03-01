@@ -1,5 +1,5 @@
 from tensorflow.keras.callbacks import TensorBoard
-import
+
 #Training Settings
 
 validation_split = 0.2 # How much of the dataset is reserved for testing # Values range from 0 to 1

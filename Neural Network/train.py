@@ -39,21 +39,21 @@ else:
 #Shuffle dataset
 main_input, aux_input, main_output, aux_output = Miscfunc.shuffle(main_input, aux_input, main_output, aux_output)
 
-#change dtype of main_input to float32
-main_input.astype('float32')
 #normalize image data
-main_input /= 255
+for _ in tqdm(range(len(main_input))):
+    main_input[_].astype('float32')
+    main_input[_] = main_input[_] / 255
 
 #Split the data into training set and validation set
-val_main_input = main_input[:len(main_input)*train_set.validation_split]
-val_aux_input = aux_input[:len(main_input)*train_set.validation_split]
-val_main_output = main_output[:len(main_input)*train_set.validation_split]
-val_aux_output = aux_output[:len(main_input)*train_set.validation_split]
+val_main_input = main_input[:int(len(main_input)*train_set.validation_split)]
+val_aux_input = aux_input[:int(len(main_input)*train_set.validation_split)]
+val_main_output = main_output[:int(len(main_input)*train_set.validation_split)]
+val_aux_output = aux_output[:int(len(main_input)*train_set.validation_split)]
 
-train_main_input = main_input[len(main_input)*train_set.validation_split:]
-train_aux_input = aux_input[len(main_input)*train_set.validation_split:]
-train_main_output = main_output[len(main_input)*train_set.testidation_split:]
-train_aux_output = aux_output[len(main_input)*train_set.validation_split:]
+train_main_input = main_input[int(len(main_input)*train_set.validation_split):]
+train_aux_input = aux_input[int(len(main_input)*train_set.validation_split):]
+train_main_output = main_output[int(len(main_input)*train_set.validation_split):]
+train_aux_output = aux_output[int(len(main_input)*train_set.validation_split):]
 
 
 
