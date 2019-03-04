@@ -37,7 +37,7 @@ Flattened_Inception_output = Flatten()(Inception_output)
 InceptionHeightConvergence = Dense(setting.InceptionHeightConvergencenoofunits, activation=setting.InceptionHeightConvergenceactivation)(Flattened_Inception_output)
 
 ## Aux Out Layer
-Image_output = Dense(1, activation='softplus', name='Image_output')(InceptionHeightConvergence)
+Image_output = Dense(37, activation='softplus', name='Image_output')(InceptionHeightConvergence)
 
 ##Height Input Layer Definination
 Height_input = Input(shape=setting.aux_input_shape, name='aux_input')

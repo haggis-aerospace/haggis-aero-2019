@@ -1,15 +1,15 @@
 from tensorflow.keras import optimizers
 
 image_shape = (3,720,960) # image size !! might need to fix shape
-aux_output_shape = (1,37) # alpha-numeric entries + null in one-hot-array
+aux_output_shape = (37,) # alpha-numeric entries + null in one-hot-array
 aux_input_shape=(1,)
-main_output_shape=(1,2)
+main_output_shape=(2,)
 #tower settings
 #tower 1
 #no of units
-tower1unitsl1=2048
-tower1unitsl2=1024
-tower1unitsl3=512
+tower1unitsl1=960
+tower1unitsl2=480
+tower1unitsl3=140
 #activation
 tower1activationl1='relu'
 tower1activationl2='relu'
@@ -19,9 +19,9 @@ dropoutpercentagetower1=0.3
 
 #tower 2
 #no of units
-tower2unitsl1=2048
-tower2unitsl2=1024
-tower2unitsl3=512
+tower2unitsl1=960
+tower2unitsl2=480
+tower2unitsl3=140
 #activation
 tower2activationl1='relu'
 tower2activationl2='relu'
@@ -31,9 +31,9 @@ dropoutpercentagetower2=0.5
 
 #tower 3
 #no of units
-tower3unitsl1=2048
-tower3unitsl2=1024
-tower3unitsl3=512
+tower3unitsl1=1024
+tower3unitsl2=512
+tower3unitsl3=140
 #activation
 tower3activationl1='relu'
 tower3activationl2='relu'
@@ -43,7 +43,7 @@ dropoutpercentagetower3=0.5
 
 #Inception Height Convergence layer
 #units
-InceptionHeightConvergencenoofunits=512
+InceptionHeightConvergencenoofunits=140
 #Activation
 InceptionHeightConvergenceactivation='relu'
 

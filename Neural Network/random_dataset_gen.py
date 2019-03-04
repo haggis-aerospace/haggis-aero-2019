@@ -26,7 +26,7 @@ gc.collect()
 #create a random one hot array for character recognition
 aux_output = np.zeros(aux_output_shape, dtype='int32')
 for i in range(no_of_samples):
-    aux_output[i][0][random.randrange(0,37)] = 1
+    aux_output[i][random.randrange(0,37)] = 1
 np.save('testing/dataset/aux_output.npy', aux_output)
 del aux_output
 gc.collect()
