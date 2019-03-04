@@ -1,8 +1,9 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 from tensorflow import keras
 import setting
 from tqdm import tqdm
 import numpy as np
-import os
 import Miscfunc
 import subprocess
 import train_set
@@ -69,12 +70,13 @@ model.model.fit([train_main_input, train_aux_input], [train_aux_output, train_ma
           batch_size=train_set.batch_size,
           epochs=train_set.epochs,
           validation_data=([val_main_input,val_aux_input], [val_aux_output,val_main_output]),
-          shuffle=False)
+          shuffle=False,
+          callbacks=train_set.callbacks)
 
 # Save model and weights
 if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
-model_path = os.path.join(train_set.save_dir, train_set.model_name)
+model_path = os.path.join(train_set.random_save_dir, train_set.model_name)
 model.model.save(model_path)
 print('Saved trained model at %s ' % model_path)
 

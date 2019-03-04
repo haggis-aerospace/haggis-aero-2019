@@ -3,8 +3,8 @@ from tensorflow.keras.callbacks import TensorBoard
 #Training Settings
 
 validation_split = 0.2 # How much of the dataset is reserved for testing # Values range from 0 to 1
-batch_size = 32
-epochs = 5
+batch_size = 1
+epochs = 2
 verbose = 1
 callbacks = [TensorBoard(log_dir='./logs', histogram_freq=0, batch_size=batch_size, write_graph=True)]
 random_dataset_loc=['testing/dataset/main_input.npy','testing/dataset/main_output.npy', 'testing/dataset/aux_input.npy','testing/dataset/aux_output.npy']
