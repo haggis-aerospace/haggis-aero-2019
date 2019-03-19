@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="-1"
+#os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 from tensorflow import keras
 import setting
 from tqdm import tqdm
@@ -74,13 +74,13 @@ model.model.fit([train_main_input, train_aux_input], [train_aux_output, train_ma
           callbacks=train_set.callbacks)
 
 # Save model and weights
-if not os.path.isdir(save_dir):
-    os.makedirs(save_dir)
+if not os.path.isdir(train_set.random_save_dir):
+    os.makedirs(train_set.random_save_dir)
 model_path = os.path.join(train_set.random_save_dir, train_set.model_name)
 model.model.save(model_path)
 print('Saved trained model at %s ' % model_path)
 
 # Score trained model.
-scores = model.model.evaluate(x_test, y_test, verbose=1)
+scores = model.model.evaluate([val_main_input,val_aux_input], [val_aux_output,val_main_output], verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])

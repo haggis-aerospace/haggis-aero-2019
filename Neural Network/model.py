@@ -4,7 +4,7 @@ from keras.models import Model
 import setting
 from keras import optimizers
 
-from keras.utils import plot_model
+#from keras.utils import plot_model
 
 
 
@@ -71,4 +71,4 @@ sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(optimizer=sgd, loss='binary_crossentropy',
               loss_weights=[1., 0.2])
 
-plot_model(model, to_file='model.png')
+#plot_model(model, to_file='model.png')
