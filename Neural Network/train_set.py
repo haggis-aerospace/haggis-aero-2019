@@ -2,12 +2,20 @@ from tensorflow.keras.callbacks import TensorBoard
 
 #Training Settings
 
+total_no_of_samples = 10000
+
 validation_split = 0.1 # How much of the dataset is reserved for testing # Values range from 0 to 1
-batch_size = 100
+batch_size = 50
 epochs = 10
 verbose = 1
-callbacks = [TensorBoard(log_dir='./logs', histogram_freq=0, batch_size=batch_size, write_graph=True)]
-random_dataset_loc=['testing/dataset/main_input.npy','testing/dataset/main_output.npy', 'testing/dataset/aux_input.npy','testing/dataset/aux_output.npy']
-dataset_loc=['dataset/main_input.npy','dataset/main_output.npy', 'dataset/aux_input.npy','dataset/aux_output.npy']
+callbacks = [TensorBoard(log_dir='./logs', histogram_freq=0, batch_size=batch_size, write_graph=True, write_grads=True)]
+random_dataset_loc= 'testing/dataset/'
+dataset_loc='dataset/'
 random_save_dir = ('testing/models')
-model_name = 'Haggis_Aero_Img_Rec.h5'
+save_dir = ('models')
+model_name = 'Haggis_Aero_Img_Rec'
+
+
+randomdata = True
+New_model = True
+model_load_number = 0
