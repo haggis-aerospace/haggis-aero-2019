@@ -13,7 +13,7 @@ Image_input = Input(shape=setting.image_shape, dtype='float32', name='main_input
 ## Inception Block Start
 
 tower_1 = Conv2D(setting.tower1unitsl1, (1, 1), padding='same', activation=setting.tower1activationl1)(Image_input)
-tower_3 = MaxPooling2D((3, 3), strides=(1, 1), padding='same')(tower_1)
+tower_1 = MaxPooling2D((3, 3), strides=(1, 1), padding='same')(tower_1)
 tower_1 = Conv2D(setting.tower1unitsl2, (3, 3), padding='same', activation=setting.tower1activationl2)(tower_1)
 tower_1 = Dropout(setting.dropoutpercentagetower1)(tower_1)
 tower_1 = Conv2D(setting.tower1unitsl3, (2, 2), padding='same', activation=setting.tower1activationl3)(tower_1)

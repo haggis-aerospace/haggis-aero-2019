@@ -1,0 +1,21 @@
+INFO:root:logging initialized
+INFO:root:logging initialized
+INFO:root:logging initialized
+DEBUG:root:OOM when allocating tensor with shape[45,3,720,1024] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node dropout_3/cond/dropout/random_uniform/RandomUniform}} = RandomUniform[T=DT_INT32, dtype=DT_FLOAT, seed=87654321, seed2=8226313, _device="/job:localhost/replica:0/task:0/device:GPU:0"](dropout_3/cond/dropout/Shape-0-0-VecPermuteNCHWToNHWC-LayoutOptimizer)]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+	 [[{{node loss/Image_output_loss/Mean_3/_203}} = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_2029_loss/Image_output_loss/Mean_3", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"]()]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+INFO:root:logging initialized
+DEBUG:root:OOM when allocating tensor with shape[45,3,720,1024] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node dropout_3/cond/dropout/random_uniform/RandomUniform}} = RandomUniform[T=DT_INT32, dtype=DT_FLOAT, seed=87654321, seed2=591641, _device="/job:localhost/replica:0/task:0/device:GPU:0"](dropout_3/cond/dropout/Shape-0-0-VecPermuteNCHWToNHWC-LayoutOptimizer)]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+	 [[{{node loss/Image_output_loss/Mean_3/_203}} = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/device:CPU:0", send_device="/job:localhost/replica:0/task:0/device:GPU:0", send_device_incarnation=1, tensor_name="edge_2029_loss/Image_output_loss/Mean_3", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"]()]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+INFO:root:logging initialized
+INFO:root:logging initialized
+DEBUG:root:[Errno 2] No such file or directory: 'testing/dataset/main_input_0.npy'
