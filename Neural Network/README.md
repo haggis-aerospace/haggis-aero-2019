@@ -8,11 +8,11 @@
 
 ## Dependencies
 
-* ![Tensorflow-gpu](https://pypi.org/project/tensorflow-gpu/)
-* ![TQDM](https://pypi.org/project/tqdm/)
-* ![keras-tqdm](https://pypi.org/project/keras-tqdm/)
-* ![numpy](https://pypi.org/project/numpy/)
-* ![Tensorboard](https://pypi.org/project/tensorboard/)
+* [Tensorflow-gpu](https://pypi.org/project/tensorflow-gpu/)
+* [TQDM](https://pypi.org/project/tqdm/)
+* [keras-tqdm](https://pypi.org/project/keras-tqdm/)
+* [numpy](https://pypi.org/project/numpy/)
+* [Tensorboard](https://pypi.org/project/tensorboard/)
 
 
 ## Contributers
