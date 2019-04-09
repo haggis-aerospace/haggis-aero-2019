@@ -30,8 +30,3 @@ Quick Start:
 TODO: Umm link to a doc explaining how to get the most recent model save that we're working on and run that
 
 TODO: link to a doc to get started on how to train net from scratch including talking about the data sets and stuff
-
-<<<<<<< HEAD
-![Python](https://img.shields.io/pypi/pyversions/tensorflow-model-analysis.svg?style=plastic)
-=======
->>>>>>> 53a90341ab6f49c45149ee6078f32562fd6d3375
