@@ -1,13 +1,12 @@
 
 import numpy as np
 from tqdm import tqdm
-from pprint import pprint
 import time
 
 
 #custom shuffle method for dataset
 def shuffle(mx, ax, my, ay):
-    pprint('Begining Shuffle Process')
+    print('Begining Shuffle Process')
     shuffler = range(len(mx)) # I can't come up with a better variable name
     shuffler = np.asarray(shuffler, dtype='int32')
     smx = []
@@ -21,6 +20,6 @@ def shuffle(mx, ax, my, ay):
         sax.append(ax[i])
         smy.append(my[i])
         say.append(ay[i])
-    pprint('Shuffle Process complete.')
-    pprint('Returning to root Program')
+    print('Shuffle Process complete.')
+    print('Returning to root Program')
     return smx, sax, smy, say
