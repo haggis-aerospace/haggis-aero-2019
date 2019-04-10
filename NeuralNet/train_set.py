@@ -5,7 +5,7 @@ from tensorflow.keras.callbacks import TensorBoard
 total_no_of_samples = 10000
 
 validation_split = 0.1 # How much of the dataset is reserved for testing # Values range from 0 to 1
-batch_size = 20
+batch_size = 10
 epochs = 10
 verbose = 1
 callbacks = [TensorBoard(log_dir='./logs', histogram_freq=0, batch_size=batch_size, write_graph=True, write_grads=True)]
@@ -17,5 +17,5 @@ model_name = 'Haggis_Aero_Img_Rec'
 
 
 randomdata = True
-New_model = True
-model_load_number = 0
+New_model = False
+model_load_number = 340
