@@ -3,15 +3,14 @@ modules/ChibiOS/obj/bouncebuffer.o: \
  ../../libraries/AP_HAL_ChibiOS/hwdef/common/stm32_util.h \
  ../../modules/ChibiOS/os/hal/include/hal.h \
  ../../modules/ChibiOS/os/hal/osal/rt/osal.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_default_types.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/features.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_newlib_version.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_intsup.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_default_types.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/features.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_intsup.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h \
  ../../modules/ChibiOS/os/rt/include/ch.h \
  ../../libraries/AP_HAL_ChibiOS/hwdef/common/chconf.h hwdef.h \
  ../../modules/ChibiOS/os/rt/include/chchecks.h \
@@ -122,39 +121,32 @@ modules/ChibiOS/obj/bouncebuffer.o: \
  ../../modules/ChibiOS/os/hal/include/hal_mmc_spi.h \
  ../../modules/ChibiOS/os/hal/include/hal_serial_usb.h \
  ../../modules/ChibiOS/os/hal/include/hal_usb_cdc.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/string.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_ansi.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/newlib.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/config.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/ieeefp.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/reent.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_ansi.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_types.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_types.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/lock.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/cdefs.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/xlocale.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/string.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/string.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/_ansi.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/newlib.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/config.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/ieeefp.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/reent.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/_ansi.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_types.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_types.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/lock.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/cdefs.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/string.h \
  ../../libraries/AP_HAL_ChibiOS/hwdef/common/stdio.h \
  ../../libraries/AP_HAL_ChibiOS/hwdef/common/posix.h \
  ../../modules/ChibiOS/ext/fatfs/src/ff.h \
  ../../modules/ChibiOS/ext/fatfs/src/integer.h \
  ../../libraries/AP_HAL_ChibiOS/hwdef/common/ffconf.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/time.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/time.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/types.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/endian.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_endian.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/select.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_sigset.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_timeval.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/timespec.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_timespec.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_pthreadtypes.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/types.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/errno.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/errno.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/time.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/time.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/types.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/types.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/timespec.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_timespec.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/errno.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/errno.h \
  ../../libraries/AP_HAL_ChibiOS/hwdef/common/bouncebuffer.h
 
 ../../libraries/AP_HAL_ChibiOS/hwdef/common/stm32_util.h:
@@ -163,23 +155,21 @@ modules/ChibiOS/obj/bouncebuffer.o: \
 
 ../../modules/ChibiOS/os/hal/osal/rt/osal.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/stdint.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_default_types.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_default_types.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/features.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/features.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_newlib_version.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_intsup.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_intsup.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_stdint.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h:
 
 ../../modules/ChibiOS/os/rt/include/ch.h:
 
@@ -403,31 +393,29 @@ hwdef.h:
 
 ../../modules/ChibiOS/os/hal/include/hal_usb_cdc.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/string.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/string.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_ansi.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/_ansi.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/newlib.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/newlib.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/config.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/config.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/ieeefp.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/ieeefp.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/reent.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/reent.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_ansi.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/_ansi.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_types.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_types.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_types.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_types.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/lock.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/lock.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/cdefs.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/cdefs.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/xlocale.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/string.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/string.h:
 
 ../../libraries/AP_HAL_ChibiOS/hwdef/common/stdio.h:
 
@@ -439,34 +427,22 @@ hwdef.h:
 
 ../../libraries/AP_HAL_ChibiOS/hwdef/common/ffconf.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/time.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/time.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/time.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/time.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/types.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/types.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/endian.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/types.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_endian.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/timespec.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/select.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_timespec.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_sigset.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/errno.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_timeval.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/timespec.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_timespec.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_pthreadtypes.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/types.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/errno.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/errno.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/errno.h:
 
 ../../libraries/AP_HAL_ChibiOS/hwdef/common/bouncebuffer.h:

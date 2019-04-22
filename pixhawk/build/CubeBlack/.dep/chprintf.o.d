@@ -2,15 +2,14 @@ modules/ChibiOS/obj/chprintf.o: \
  ../../modules/ChibiOS/os/hal/lib/streams/chprintf.c \
  ../../modules/ChibiOS/os/hal/include/hal.h \
  ../../modules/ChibiOS/os/hal/osal/rt/osal.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_default_types.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/features.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_newlib_version.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_intsup.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_default_types.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/features.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_intsup.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h \
  ../../modules/ChibiOS/os/rt/include/ch.h \
  ../../libraries/AP_HAL_ChibiOS/hwdef/common/chconf.h hwdef.h \
  ../../modules/ChibiOS/os/rt/include/chchecks.h \
@@ -122,30 +121,28 @@ modules/ChibiOS/obj/chprintf.o: \
  ../../modules/ChibiOS/os/hal/include/hal_serial_usb.h \
  ../../modules/ChibiOS/os/hal/include/hal_usb_cdc.h \
  ../../modules/ChibiOS/os/hal/lib/streams/chprintf.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
  ../../modules/ChibiOS/os/hal/lib/streams/memstreams.h
 
 ../../modules/ChibiOS/os/hal/include/hal.h:
 
 ../../modules/ChibiOS/os/hal/osal/rt/osal.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/stdint.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_default_types.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_default_types.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/features.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/features.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_newlib_version.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_intsup.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_intsup.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_stdint.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h:
 
 ../../modules/ChibiOS/os/rt/include/ch.h:
 
@@ -371,6 +368,6 @@ hwdef.h:
 
 ../../modules/ChibiOS/os/hal/lib/streams/chprintf.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h:
 
 ../../modules/ChibiOS/os/hal/lib/streams/memstreams.h:

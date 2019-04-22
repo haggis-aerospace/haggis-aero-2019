@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccKo5Cuc.s 			page 1
+ARM GAS  /tmp/cck1Rbzg.s 			page 1
 
 
    1              	# 1 "../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S"
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
   26              	 */
   27              	
   28              	#ifndef CMPARAMS_H
-ARM GAS  /tmp/ccKo5Cuc.s 			page 2
+ARM GAS  /tmp/cck1Rbzg.s 			page 2
 
 
   29              	#define CMPARAMS_H
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
    2              	 generated hardware definitions from hwdef.dat - DO NOT EDIT
    3              	*/
    4              	
-ARM GAS  /tmp/ccKo5Cuc.s 			page 3
+ARM GAS  /tmp/cck1Rbzg.s 			page 3
 
 
    5              	#pragma once
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
   74      00000000 
   75              	#if CORTEX_NUM_VECTORS > 4
   76 0050 00000000 	        .long       Vector50,   Vector54,   Vector58,   Vector5C
-ARM GAS  /tmp/ccKo5Cuc.s 			page 4
+ARM GAS  /tmp/cck1Rbzg.s 			page 4
 
 
   76      00000000 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  103      00000000 
  103      00000000 
  103      00000000 
-ARM GAS  /tmp/ccKo5Cuc.s 			page 5
+ARM GAS  /tmp/cck1Rbzg.s 			page 5
 
 
  104              	#endif
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  131              	#endif
  132              	#if CORTEX_NUM_VECTORS > 80
  133 0180 00000000 	        .long       Vector180,  Vector184,  Vector188,  Vector18C
-ARM GAS  /tmp/ccKo5Cuc.s 			page 6
+ARM GAS  /tmp/cck1Rbzg.s 			page 6
 
 
  133      00000000 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  170              	#endif
  171              	#if CORTEX_NUM_VECTORS > 132
  172              	        .long       Vector250,  Vector254,  Vector258,  Vector25C
-ARM GAS  /tmp/ccKo5Cuc.s 			page 7
+ARM GAS  /tmp/cck1Rbzg.s 			page 7
 
 
  173              	#endif
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  227              	#endif
  228              	#if CORTEX_NUM_VECTORS > 208
  229              	        .long       Vector380,  Vector384,  Vector388,  Vector38C
-ARM GAS  /tmp/ccKo5Cuc.s 			page 8
+ARM GAS  /tmp/cck1Rbzg.s 			page 8
 
 
  230              	#endif
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  284              	        .weak       Vector70,   Vector74,   Vector78,   Vector7C
  285              	#endif
  286              	#if CORTEX_NUM_VECTORS > 16
-ARM GAS  /tmp/ccKo5Cuc.s 			page 9
+ARM GAS  /tmp/cck1Rbzg.s 			page 9
 
 
  287              	        .weak       Vector80,   Vector84,   Vector88,   Vector8C
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  341              	        .weak       Vector1A0,  Vector1A4,  Vector1A8,  Vector1AC
  342              	#endif
  343              	#if CORTEX_NUM_VECTORS > 92
-ARM GAS  /tmp/ccKo5Cuc.s 			page 10
+ARM GAS  /tmp/cck1Rbzg.s 			page 10
 
 
  344              	        .weak       Vector1B0,  Vector1B4,  Vector1B8,  Vector1BC
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  398              	        .weak       Vector2D0,  Vector2D4,  Vector2D8,  Vector2DC
  399              	#endif
  400              	#if CORTEX_NUM_VECTORS > 168
-ARM GAS  /tmp/ccKo5Cuc.s 			page 11
+ARM GAS  /tmp/cck1Rbzg.s 			page 11
 
 
  401              	        .weak       Vector2E0,  Vector2E4,  Vector2E8,  Vector2EC
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  455              	        .thumb_func
  456              	NMI_Handler:
  457              	        .thumb_func
-ARM GAS  /tmp/ccKo5Cuc.s 			page 12
+ARM GAS  /tmp/cck1Rbzg.s 			page 12
 
 
  458              	HardFault_Handler:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  512              	        .thumb_func
  513              	Vector78:
  514              	        .thumb_func
-ARM GAS  /tmp/ccKo5Cuc.s 			page 13
+ARM GAS  /tmp/cck1Rbzg.s 			page 13
 
 
  515              	Vector7C:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  569              	VectorDC:
  570              	#endif
  571              	#if CORTEX_NUM_VECTORS > 40
-ARM GAS  /tmp/ccKo5Cuc.s 			page 14
+ARM GAS  /tmp/cck1Rbzg.s 			page 14
 
 
  572              	        .thumb_func
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  626              	        .thumb_func
  627              	Vector140:
  628              	        .thumb_func
-ARM GAS  /tmp/ccKo5Cuc.s 			page 15
+ARM GAS  /tmp/cck1Rbzg.s 			page 15
 
 
  629              	Vector144:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  683              	Vector1A4:
  684              	        .thumb_func
  685              	Vector1A8:
-ARM GAS  /tmp/ccKo5Cuc.s 			page 16
+ARM GAS  /tmp/cck1Rbzg.s 			page 16
 
 
  686              	        .thumb_func
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  740              	        .thumb_func
  741              	Vector20C:
  742              	        .thumb_func
-ARM GAS  /tmp/ccKo5Cuc.s 			page 17
+ARM GAS  /tmp/cck1Rbzg.s 			page 17
 
 
  743              	Vector210:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  797              	Vector270:
  798              	        .thumb_func
  799              	Vector274:
-ARM GAS  /tmp/ccKo5Cuc.s 			page 18
+ARM GAS  /tmp/cck1Rbzg.s 			page 18
 
 
  800              	        .thumb_func
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  854              	        .thumb_func
  855              	Vector2D8:
  856              	        .thumb_func
-ARM GAS  /tmp/ccKo5Cuc.s 			page 19
+ARM GAS  /tmp/cck1Rbzg.s 			page 19
 
 
  857              	Vector2DC:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  911              	Vector33C:
  912              	#endif
  913              	#if CORTEX_NUM_VECTORS > 192
-ARM GAS  /tmp/ccKo5Cuc.s 			page 20
+ARM GAS  /tmp/cck1Rbzg.s 			page 20
 
 
  914              	        .thumb_func
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  968              	        .thumb_func
  969              	Vector3A0:
  970              	        .thumb_func
-ARM GAS  /tmp/ccKo5Cuc.s 			page 21
+ARM GAS  /tmp/cck1Rbzg.s 			page 21
 
 
  971              	Vector3A4:
@@ -1258,143 +1258,143 @@ ARM GAS  /tmp/ccKo5Cuc.s 			page 1
  1025              	_unhandled_exception:
  1026              	.stay:
  1027 0006 FEE7     	        b           .stay
-ARM GAS  /tmp/ccKo5Cuc.s 			page 22
+ARM GAS  /tmp/cck1Rbzg.s 			page 22
 
 
-ARM GAS  /tmp/ccKo5Cuc.s 			page 23
+ARM GAS  /tmp/cck1Rbzg.s 			page 23
 
 
 DEFINED SYMBOLS
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:57     .vectors:0000000000000000 _vectors
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:58     .vectors:0000000000000000 $d
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:258    .text:0000000000000000 Reset_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:456    .text:0000000000000002 NMI_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:458    .text:0000000000000002 HardFault_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:460    .text:0000000000000002 MemManage_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:462    .text:0000000000000002 BusFault_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:464    .text:0000000000000002 UsageFault_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:466    .text:0000000000000002 Vector1C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:468    .text:0000000000000002 Vector20
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:470    .text:0000000000000002 Vector24
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:472    .text:0000000000000002 Vector28
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:474    .text:0000000000000002 SVC_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:476    .text:0000000000000002 DebugMon_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:478    .text:0000000000000002 Vector34
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:480    .text:0000000000000002 PendSV_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:482    .text:0000000000000002 SysTick_Handler
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:484    .text:0000000000000002 Vector40
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:486    .text:0000000000000002 Vector44
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:488    .text:0000000000000002 Vector48
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:490    .text:0000000000000002 Vector4C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:492    .text:0000000000000002 Vector50
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:494    .text:0000000000000002 Vector54
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:496    .text:0000000000000002 Vector58
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:498    .text:0000000000000002 Vector5C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:501    .text:0000000000000002 Vector60
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:503    .text:0000000000000002 Vector64
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:505    .text:0000000000000002 Vector68
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:507    .text:0000000000000002 Vector6C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:509    .text:0000000000000002 Vector70
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:511    .text:0000000000000002 Vector74
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:513    .text:0000000000000002 Vector78
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:515    .text:0000000000000002 Vector7C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:519    .text:0000000000000002 Vector80
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:521    .text:0000000000000002 Vector84
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:523    .text:0000000000000002 Vector88
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:525    .text:0000000000000002 Vector8C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:527    .text:0000000000000002 Vector90
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:529    .text:0000000000000002 Vector94
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:531    .text:0000000000000002 Vector98
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:533    .text:0000000000000002 Vector9C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:537    .text:0000000000000002 VectorA0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:539    .text:0000000000000002 VectorA4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:541    .text:0000000000000002 VectorA8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:543    .text:0000000000000002 VectorAC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:545    .text:0000000000000002 VectorB0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:547    .text:0000000000000002 VectorB4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:549    .text:0000000000000002 VectorB8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:551    .text:0000000000000002 VectorBC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:555    .text:0000000000000002 VectorC0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:557    .text:0000000000000002 VectorC4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:559    .text:0000000000000002 VectorC8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:561    .text:0000000000000002 VectorCC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:563    .text:0000000000000002 VectorD0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:565    .text:0000000000000002 VectorD4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:567    .text:0000000000000002 VectorD8
-ARM GAS  /tmp/ccKo5Cuc.s 			page 24
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:57     .vectors:00000000 _vectors
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:58     .vectors:00000000 $d
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:258    .text:00000000 Reset_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:456    .text:00000002 NMI_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:458    .text:00000002 HardFault_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:460    .text:00000002 MemManage_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:462    .text:00000002 BusFault_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:464    .text:00000002 UsageFault_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:466    .text:00000002 Vector1C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:468    .text:00000002 Vector20
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:470    .text:00000002 Vector24
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:472    .text:00000002 Vector28
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:474    .text:00000002 SVC_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:476    .text:00000002 DebugMon_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:478    .text:00000002 Vector34
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:480    .text:00000002 PendSV_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:482    .text:00000002 SysTick_Handler
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:484    .text:00000002 Vector40
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:486    .text:00000002 Vector44
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:488    .text:00000002 Vector48
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:490    .text:00000002 Vector4C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:492    .text:00000002 Vector50
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:494    .text:00000002 Vector54
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:496    .text:00000002 Vector58
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:498    .text:00000002 Vector5C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:501    .text:00000002 Vector60
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:503    .text:00000002 Vector64
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:505    .text:00000002 Vector68
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:507    .text:00000002 Vector6C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:509    .text:00000002 Vector70
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:511    .text:00000002 Vector74
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:513    .text:00000002 Vector78
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:515    .text:00000002 Vector7C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:519    .text:00000002 Vector80
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:521    .text:00000002 Vector84
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:523    .text:00000002 Vector88
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:525    .text:00000002 Vector8C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:527    .text:00000002 Vector90
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:529    .text:00000002 Vector94
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:531    .text:00000002 Vector98
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:533    .text:00000002 Vector9C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:537    .text:00000002 VectorA0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:539    .text:00000002 VectorA4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:541    .text:00000002 VectorA8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:543    .text:00000002 VectorAC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:545    .text:00000002 VectorB0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:547    .text:00000002 VectorB4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:549    .text:00000002 VectorB8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:551    .text:00000002 VectorBC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:555    .text:00000002 VectorC0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:557    .text:00000002 VectorC4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:559    .text:00000002 VectorC8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:561    .text:00000002 VectorCC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:563    .text:00000002 VectorD0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:565    .text:00000002 VectorD4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:567    .text:00000002 VectorD8
+ARM GAS  /tmp/cck1Rbzg.s 			page 24
 
 
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:569    .text:0000000000000002 VectorDC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:573    .text:0000000000000002 VectorE0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:575    .text:0000000000000002 VectorE4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:577    .text:0000000000000002 VectorE8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:579    .text:0000000000000002 VectorEC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:581    .text:0000000000000002 VectorF0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:583    .text:0000000000000002 VectorF4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:585    .text:0000000000000002 VectorF8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:587    .text:0000000000000002 VectorFC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:591    .text:0000000000000002 Vector100
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:593    .text:0000000000000002 Vector104
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:595    .text:0000000000000002 Vector108
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:597    .text:0000000000000002 Vector10C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:599    .text:0000000000000002 Vector110
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:601    .text:0000000000000002 Vector114
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:603    .text:0000000000000002 Vector118
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:605    .text:0000000000000002 Vector11C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:609    .text:0000000000000002 Vector120
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:611    .text:0000000000000002 Vector124
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:613    .text:0000000000000002 Vector128
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:615    .text:0000000000000002 Vector12C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:617    .text:0000000000000002 Vector130
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:619    .text:0000000000000002 Vector134
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:621    .text:0000000000000002 Vector138
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:623    .text:0000000000000002 Vector13C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:627    .text:0000000000000002 Vector140
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:629    .text:0000000000000002 Vector144
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:631    .text:0000000000000002 Vector148
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:633    .text:0000000000000002 Vector14C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:635    .text:0000000000000002 Vector150
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:637    .text:0000000000000002 Vector154
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:639    .text:0000000000000002 Vector158
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:641    .text:0000000000000002 Vector15C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:645    .text:0000000000000002 Vector160
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:647    .text:0000000000000002 Vector164
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:649    .text:0000000000000002 Vector168
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:651    .text:0000000000000002 Vector16C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:653    .text:0000000000000002 Vector170
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:655    .text:0000000000000002 Vector174
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:657    .text:0000000000000002 Vector178
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:659    .text:0000000000000002 Vector17C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:663    .text:0000000000000002 Vector180
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:665    .text:0000000000000002 Vector184
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:667    .text:0000000000000002 Vector188
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:669    .text:0000000000000002 Vector18C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:671    .text:0000000000000002 Vector190
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:673    .text:0000000000000002 Vector194
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:675    .text:0000000000000002 Vector198
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:677    .text:0000000000000002 Vector19C
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:681    .text:0000000000000002 Vector1A0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:683    .text:0000000000000002 Vector1A4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:685    .text:0000000000000002 Vector1A8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:687    .text:0000000000000002 Vector1AC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:689    .text:0000000000000002 Vector1B0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:691    .text:0000000000000002 Vector1B4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:693    .text:0000000000000002 Vector1B8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:695    .text:0000000000000002 Vector1BC
-ARM GAS  /tmp/ccKo5Cuc.s 			page 25
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:569    .text:00000002 VectorDC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:573    .text:00000002 VectorE0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:575    .text:00000002 VectorE4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:577    .text:00000002 VectorE8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:579    .text:00000002 VectorEC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:581    .text:00000002 VectorF0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:583    .text:00000002 VectorF4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:585    .text:00000002 VectorF8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:587    .text:00000002 VectorFC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:591    .text:00000002 Vector100
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:593    .text:00000002 Vector104
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:595    .text:00000002 Vector108
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:597    .text:00000002 Vector10C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:599    .text:00000002 Vector110
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:601    .text:00000002 Vector114
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:603    .text:00000002 Vector118
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:605    .text:00000002 Vector11C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:609    .text:00000002 Vector120
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:611    .text:00000002 Vector124
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:613    .text:00000002 Vector128
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:615    .text:00000002 Vector12C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:617    .text:00000002 Vector130
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:619    .text:00000002 Vector134
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:621    .text:00000002 Vector138
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:623    .text:00000002 Vector13C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:627    .text:00000002 Vector140
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:629    .text:00000002 Vector144
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:631    .text:00000002 Vector148
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:633    .text:00000002 Vector14C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:635    .text:00000002 Vector150
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:637    .text:00000002 Vector154
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:639    .text:00000002 Vector158
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:641    .text:00000002 Vector15C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:645    .text:00000002 Vector160
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:647    .text:00000002 Vector164
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:649    .text:00000002 Vector168
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:651    .text:00000002 Vector16C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:653    .text:00000002 Vector170
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:655    .text:00000002 Vector174
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:657    .text:00000002 Vector178
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:659    .text:00000002 Vector17C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:663    .text:00000002 Vector180
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:665    .text:00000002 Vector184
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:667    .text:00000002 Vector188
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:669    .text:00000002 Vector18C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:671    .text:00000002 Vector190
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:673    .text:00000002 Vector194
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:675    .text:00000002 Vector198
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:677    .text:00000002 Vector19C
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:681    .text:00000002 Vector1A0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:683    .text:00000002 Vector1A4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:685    .text:00000002 Vector1A8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:687    .text:00000002 Vector1AC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:689    .text:00000002 Vector1B0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:691    .text:00000002 Vector1B4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:693    .text:00000002 Vector1B8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:695    .text:00000002 Vector1BC
+ARM GAS  /tmp/cck1Rbzg.s 			page 25
 
 
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:699    .text:0000000000000002 Vector1C0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:701    .text:0000000000000002 Vector1C4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:703    .text:0000000000000002 Vector1C8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:705    .text:0000000000000002 Vector1CC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:707    .text:0000000000000002 Vector1D0
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:709    .text:0000000000000002 Vector1D4
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:711    .text:0000000000000002 Vector1D8
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:713    .text:0000000000000002 Vector1DC
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:255    .text:0000000000000000 $t
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1025   .text:0000000000000006 _unhandled_exception
-../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1026   .text:0000000000000006 .stay
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:699    .text:00000002 Vector1C0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:701    .text:00000002 Vector1C4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:703    .text:00000002 Vector1C8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:705    .text:00000002 Vector1CC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:707    .text:00000002 Vector1D0
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:709    .text:00000002 Vector1D4
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:711    .text:00000002 Vector1D8
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:713    .text:00000002 Vector1DC
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:255    .text:00000000 $t
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1025   .text:00000006 _unhandled_exception
+../../modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/vectors.S:1026   .text:00000006 .stay
 
 UNDEFINED SYMBOLS
 __main_stack_end__

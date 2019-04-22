@@ -132,7 +132,7 @@ libraries/AP_Notify/MMLPlayer.cpp.0.o: \
  ../../libraries/AP_HAL/Storage.h ../../libraries/AP_HAL/UARTDriver.h \
  ../../libraries/AP_HAL/utility/BetterStream.h \
  ../../libraries/AP_HAL/system.h ../../libraries/AP_HAL/OpticalFlow.h \
- ../../libraries/AP_HAL/CAN.h \
+ ../../libraries/AP_HAL/CAN.h ../../libraries/AP_Common/missing/cmath \
  ../../modules/uavcan/libuavcan/include/uavcan/driver/can.hpp \
  ../../modules/uavcan/libuavcan/include/uavcan/std.hpp \
  ../../modules/uavcan/libuavcan/include/uavcan/build_config.hpp \

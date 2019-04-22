@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccu217Ga.s 			page 1
+ARM GAS  /tmp/ccegic4f.s 			page 1
 
 
    1              	# 1 "../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S"
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
   15              	
   16              	    You should have received a copy of the GNU General Public License
   17              	    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-ARM GAS  /tmp/ccu217Ga.s 			page 2
+ARM GAS  /tmp/ccegic4f.s 			page 2
 
 
   18              	*/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
    2              	 * This file is free software: you can redistribute it and/or modify it
    3              	 * under the terms of the GNU General Public License as published by the
    4              	 * Free Software Foundation, either version 3 of the License, or
-ARM GAS  /tmp/ccu217Ga.s 			page 3
+ARM GAS  /tmp/ccegic4f.s 			page 3
 
 
    5              	 * (at your option) any later version.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
   20              	/**
   21              	 * @file    ARMCMx/chcore.h
   22              	 * @brief   ARM Cortex-Mx port macros and structures.
-ARM GAS  /tmp/ccu217Ga.s 			page 4
+ARM GAS  /tmp/ccegic4f.s 			page 4
 
 
   23              	 *
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
   76              	/**
   77              	 * @brief   Enables an alternative timer implementation.
   78              	 * @details Usually the port uses a timer interface defined in the file
-ARM GAS  /tmp/ccu217Ga.s 			page 5
+ARM GAS  /tmp/ccegic4f.s 			page 5
 
 
   79              	 *          @p chcore_timer.h, if this option is enabled then the file
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
  133              	 * @details In this port the structure just holds a pointer to the
  134              	 *          @p port_intctx structure representing the stack pointer
  135              	 *          at context switch time.
-ARM GAS  /tmp/ccu217Ga.s 			page 6
+ARM GAS  /tmp/ccegic4f.s 			page 6
 
 
  136              	 */
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
  190              	
  191              	/* Includes the sub-architecture-specific part.*/
  192              	#if (CORTEX_MODEL == 0) || (CORTEX_MODEL == 1)
-ARM GAS  /tmp/ccu217Ga.s 			page 7
+ARM GAS  /tmp/ccegic4f.s 			page 7
 
 
  193              	#include "chcore_v6m.h"
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
   87              	                ldr     sp, [r0, #CONTEXT_OFFSET]
   88              	#endif
   89              	
-ARM GAS  /tmp/ccu217Ga.s 			page 8
+ARM GAS  /tmp/ccegic4f.s 			page 8
 
 
   90              	#if CORTEX_USE_FPU
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
  144              	#if CH_DBG_SYSTEM_STATE_CHECK
  145              	                bl      _dbg_check_unlock
  146              	#endif
-ARM GAS  /tmp/ccu217Ga.s 			page 9
+ARM GAS  /tmp/ccegic4f.s 			page 9
 
 
  147              	#if CH_DBG_STATISTICS
@@ -496,17 +496,17 @@ ARM GAS  /tmp/ccu217Ga.s 			page 1
  159 0038 00DF     	                svc     #0
  160              	#endif /* !CORTEX_SIMPLIFIED_PRIORITY */
  161 003a FEE7     	.L1:            b       .L1
-ARM GAS  /tmp/ccu217Ga.s 			page 10
+ARM GAS  /tmp/ccegic4f.s 			page 10
 
 
 DEFINED SYMBOLS
-../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:54     *ABS*:00000000e000ed04 SCB_ICSR
-../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:55     *ABS*:0000000010000000 ICSR_PENDSVSET
-../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:73     .text:0000000000000000 _port_switch
-../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:74     .text:0000000000000000 $t
-../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:105    .text:0000000000000018 _port_thread_start
-../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:136    .text:000000000000002c _port_switch_from_isr
-../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:151    .text:0000000000000038 _port_exit_from_isr
+../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:54     *ABS*:e000ed04 SCB_ICSR
+../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:55     *ABS*:10000000 ICSR_PENDSVSET
+../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:73     .text:00000000 _port_switch
+../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:74     .text:00000000 $t
+../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:105    .text:00000018 _port_thread_start
+../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:136    .text:0000002c _port_switch_from_isr
+../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chcoreasm_v7m.S:151    .text:00000038 _port_exit_from_isr
 
 UNDEFINED SYMBOLS
 _stats_stop_measure_crit_thd

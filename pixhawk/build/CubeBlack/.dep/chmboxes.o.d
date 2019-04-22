@@ -7,15 +7,14 @@ modules/ChibiOS/obj/chmboxes.o: \
  ../../modules/ChibiOS/os/license/chcustomer.h \
  ../../modules/ChibiOS/os/rt/include/chrestrictions.h \
  ../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chtypes.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_default_types.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/features.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_newlib_version.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_intsup.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_stdint.h \
- /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_default_types.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/features.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_intsup.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_stdint.h \
+ /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h \
  ../../modules/ChibiOS/os/rt/include/chsystypes.h \
  ../../modules/ChibiOS/os/rt/include/chdebug.h \
  ../../modules/ChibiOS/os/rt/include/chtime.h \
@@ -79,23 +78,21 @@ hwdef.h:
 
 ../../modules/ChibiOS/os/common/ports/ARMCMx/compilers/GCC/chtypes.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stddef.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdint.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/stdint.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/machine/_default_types.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/machine/_default_types.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/features.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/features.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/_newlib_version.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_intsup.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_intsup.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/arm-none-eabi/include/sys/_stdint.h:
 
-/opt/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include/sys/_stdint.h:
-
-/opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdbool.h:
+/opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdbool.h:
 
 ../../modules/ChibiOS/os/rt/include/chsystypes.h:
 

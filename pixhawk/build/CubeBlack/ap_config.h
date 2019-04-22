@@ -13,9 +13,9 @@
 #define NEED_CMATH_ISNAN_STD_NAMESPACE 1
 /* #undef HAVE_ENDIAN_H */
 /* #undef HAVE_BYTESWAP_H */
-/* #undef HAVE_MEMRCHR */
-#define PYTHONDIR "/usr/lib/python2.7/dist-packages"
-#define PYTHONARCHDIR "/usr/lib/python2.7/dist-packages"
+#define HAVE_MEMRCHR 1
+#define PYTHONDIR "/usr/lib/python3/dist-packages"
+#define PYTHONARCHDIR "/usr/lib/python3/dist-packages"
 #define _GNU_SOURCE 1
 
 #endif /* W_CUBEBLACK_AP_CONFIG_H_WAF */
