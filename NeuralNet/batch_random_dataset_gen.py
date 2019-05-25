@@ -6,7 +6,6 @@ from tqdm import tqdm
 import random
 import gc
 import train_set
-import logging
 
 #setup logging
 logging.basicConfig(filename='testing/logs/batch_rand_gen_logs.log',level=logging.DEBUG)
