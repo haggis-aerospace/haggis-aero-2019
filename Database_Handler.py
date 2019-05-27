@@ -34,4 +34,8 @@ class Database():
         self.conn.commit()
 
     def clean(self):
+        self.c.execute('''SELECT COUNT(id) FROM data''')
+        rowcount = c.fetchone()[0]
+        print('Database closing')
+        print('There are {} rows within table'.format(rowcount))
         self.conn.close()
