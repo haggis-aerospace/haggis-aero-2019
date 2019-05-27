@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+# Savio Andrade
+# Dundee Haggis-Aero 2019
+# Responsible for building database and streaming images
+
+
 import threading, image_cap, Database_Handler, DroneKit_Wrapper
 import time
 import gc
