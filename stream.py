@@ -4,6 +4,8 @@ import threading, image_cap, Database_Handler, DroneKit_Wrapper
 import time
 import gc
 import argparse
+import os
+import platform
 
 gc.enable()
 
@@ -26,10 +28,14 @@ parser = argparse.ArgumentParser(description='Generates the dataset for the Hagg
 parser.add_argument('-tlat', type=float, help="Define target latitude coordinates in degrees")
 parser.add_argument('-tlon', type=float, help="Define target longitude coordinates in degrees")
 parser.add_argument('-tchar', type=char, help="Define target character")
+parser.add_argument('-stalt', type=float, default=50.0, help="Define dataset creation start altitude")
+parser.add_argument('-stmode', type=str, default='FBWA', help="Define dataset creation start mode")
 args = parser.parse_args()
 
+args.tchar = args.tchar.upper()
+args.stmode = args.stmode.upper()
 
-#
+#image_name_counter
 image_name_counter = 0
 
 #init database handler
@@ -69,6 +75,15 @@ def image_stream(counter):
     db.start()
 
 if __name__ == '__main__':
+    while Drone.check_mode() != args.stmode and Drone.get_altitude() != args.stalt:
+        print("Drone not at height or correct mode")
+        print("Get to {}m to activate, Current Altitude :- {}m, Climb {}m to activate".format(args.stalt, Drone.get_altitude(), args.stalt-Drone.get_altitude()))
+        print("Change Mode to {} to activate, Current Mode {}".format(args.stmode, Drone.check_mode()))
+        time.sleep(0.5)
+        if platform.system() == 'Linux':
+            os.system('clear')
+        else:
+            os.system('cls')
     try:
         global processLock
         processLock = threading.Lock()
