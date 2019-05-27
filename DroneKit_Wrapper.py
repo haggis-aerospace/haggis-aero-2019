@@ -6,16 +6,16 @@ from dronekit import connect
 from numpy import pi
 
 class Location:
-    vehicle = 0
+    vehicle = None
+    lat = None
+    lon = None
+    init_alt = None
+    rel_alt = None
+    pitch = None
+    roll = None
+    heading = None
+    heartbeat=False
 
-    lat = 0
-    lon = 0
-    init_alt = 0
-    rel_alt = 0
-    pitch = 0
-    roll = 0
-    heading = 0
-        
     def __init__(self):
         self.vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=57600)
         self.init_alt = self.vehicle.location._alt
@@ -27,8 +27,11 @@ class Location:
         self.heading = self.vehicle._heading
         self.pitch = (self.vehicle._pitch/pi) + 0.5
         self.roll = (self.vehicle._roll/pi) + 0.5
-
-
+# TODO write code to check for heartbeat
+'''
+    def get_heartbeat(self):
+        self.vehicle.
+'''
     # TODO remove (only used for testing)
     def print_attributes(self):
         self.get_location()
