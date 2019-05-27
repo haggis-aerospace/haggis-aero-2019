@@ -1,44 +1,37 @@
-# Eva Lott
+# Eva Lott & Savio Andrade & Ryan Anderson
 # Dundee Haggis-Aero 2019
 # Responsible for handling database for training data
 
 import sys
 import sqlite3
-import DroneKit_Wrapper
 import Target
 
-conn = 0;
-cursor = 0;
 
-# Initialise location tracker class
-location = DroneKit_Wrapper.Location()
+class Database():
+    conn = None
+    cursor = None
+    target = None
+    c = None
+    def __init__(self, target_lat, target_lon, target_char):
+        self.target = Target.Target(target_lon, target_lat, target_char)
+        self.conn = sqlite3.connect("training_data.db")
+        self.c = self.conn.cursor()
 
-# Target doesn't change from loop to loop (other than filename so the initial one is set here)
-target = 0
+        self.c.execute('''CREATE TABLE IF NOT EXISTS data (id INTEGER PRIMARY KEY AUTOINCREMENT, DATETIME,
+        uas_height DOUBLE, uas_long DOUBLE, uas_lat DOUBLE, uas_heading DOUBLE, uas_pitch DOUBLE, uas_roll DOUBLE, target_long DOUBLE, target_lat DOUBLE, target_letter CHAR, img_name TEXT)''')
 
-def database_init():
-    target = Target(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
-    conn = sqlite3.connect("training_data.db")
-    c = conn.cursor()
+        self.conn.commit()
 
-    c.execute('''CREATE TABLE IF NOT EXISTS data (id INTEGER PRIMARY KEY AUTOINCREMENT, DATETIME
-    uas_height DOUBLE, uas_long DOUBLE, uas_lat DOUBLE, uas_heading DOUBLE, uas_pitch DOUBLE, uas_roll DOUBLE, target_long DOUBLE, target_lat DOUBLE, target_letter CHAR, img_name TEXT)''')
 
-    conn.commit()
+    def collect(self, height, lat, lon, heading, pitch, roll, image_name):
+        # Populate database
+        self.c.execute('''INSERT INTO data (DATETIME, uas_height,uas_long, uas_lat,uas_heading, uas_pitch, uas_roll, target_long,target_lat,target_letter,img_name) VALUES(CURRENT_TIMESTAMP,?,?,?,?,?,?,?,?,?,?)''',
+        (height, lon, lat, heading, pitch, roll, self.target.lon, self.target.lat, self.target.letter, image_name))
 
-def database_handler_collect():
+        self.c.execute('''SELECT * FROM data''')
+        #print(self.c.fetchall())
 
-    # Get current location
-    location.get_location();
+        self.conn.commit()
 
-    # Populate database
-    c.execute('''INSERT INTO data (uas_height,uas_long, uas_lat,uas_heading, uas_pitch, uas_roll target_long,target_lat,target_letter,img_name) VALUES(CURRENT_TIMESTAMP,?,?,?,?,?,?,?,?)''',
-    (location.rel_alt, location.lon, location.lat, location.heading, location.pitch, location.roll, target.lon, target.lat, target.letter, target.img_filename))
-
-    c.execute('''SELECT * FROM data''')
-    print(c.fetchall())
-
-    conn.commit()
-
-def database_handler_clean():
-    conn.close()
+    def clean(self):
+        self.conn.close()
