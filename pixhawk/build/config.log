@@ -1,13 +1,13 @@
-# project  configured on Mon Apr 22 15:50:57 2019 by
+# project  configured on Mon Apr 22 17:04:57 2019 by
 # waf 2.0.9 (abi 20, python 2070cf0 on linux2)
-# using /home/haggisaerospace/ardupilot/ardupilot/modules/waf/waf-light configure --board CubeBlack build
+# using /home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/waf/waf-light configure --board CubeBlack build
 #
 ----------------------------------------
 Setting top to
-/home/haggisaerospace/ardupilot/ardupilot
+/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk
 ----------------------------------------
 Setting out to
-/home/haggisaerospace/ardupilot/ardupilot/build
+/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/build
 ----------------------------------------
 Autoconfiguration
 enabled
@@ -727,7 +727,7 @@ Checking for c flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_43d701f27805f1af0075a2661c2229a6/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_63a850089ab9c217b2d15d2938f3a356/test.c[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc', '-MMD', '-DWAF_BUILD=1', '../../test.c', '-c', '-otest.c.1.o']
 yes
@@ -736,7 +736,7 @@ Checking for cxx flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_b8f95510293ecfc21432edc39b913f84/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_efb6fbf8ee3b4c5501eddf98969ccda2/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-MMD', '-DWAF_BUILD=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 yes
@@ -764,12 +764,12 @@ Checking for HAVE_CMATH_ISFINITE
           return std::isfinite(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_5d182ca07ab3ce4628ab37d1627f00f6/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_ad5dac0f849535ff07f9b19a1ef83e82/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_5d182ca07ab3ce4628ab37d1627f00f6/testbuild/CubeBlack/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_ad5dac0f849535ff07f9b19a1ef83e82/testbuild/CubeBlack/testprog[0m
 
-['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/ardupilot/ardupilot/build/CubeBlack', '-L/home/haggisaerospace/ardupilot/ardupilot/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/ardupilot/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
+['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/build/CubeBlack', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
 err: /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008004000
 
 yes
@@ -783,12 +783,12 @@ Checking for HAVE_CMATH_ISINF
           return std::isinf(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_1b7db3537b1bd11d0c3238bffdc2c894/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_910d10961f9923ec42b2c3f40d616a2b/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_1b7db3537b1bd11d0c3238bffdc2c894/testbuild/CubeBlack/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_910d10961f9923ec42b2c3f40d616a2b/testbuild/CubeBlack/testprog[0m
 
-['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/ardupilot/ardupilot/build/CubeBlack', '-L/home/haggisaerospace/ardupilot/ardupilot/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/ardupilot/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
+['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/build/CubeBlack', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
 err: /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008004000
 
 yes
@@ -802,12 +802,12 @@ Checking for HAVE_CMATH_ISNAN
           return std::isnan(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_cd0015f82c0a4ea6715c370cbf0c4ede/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_a13f542b89da5cf19f46b65a2d0b0eb0/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_cd0015f82c0a4ea6715c370cbf0c4ede/testbuild/CubeBlack/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_a13f542b89da5cf19f46b65a2d0b0eb0/testbuild/CubeBlack/testprog[0m
 
-['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/ardupilot/ardupilot/build/CubeBlack', '-L/home/haggisaerospace/ardupilot/ardupilot/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/ardupilot/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
+['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/build/CubeBlack', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
 err: /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008004000
 
 yes
@@ -824,12 +824,12 @@ Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE
           return isfinite((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_c1d6288b36f37f94fa6533b1f8258045/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_efa8591d68a18d4aa3f2323c024abb4f/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_c1d6288b36f37f94fa6533b1f8258045/testbuild/CubeBlack/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_efa8591d68a18d4aa3f2323c024abb4f/testbuild/CubeBlack/testprog[0m
 
-['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/ardupilot/ardupilot/build/CubeBlack', '-L/home/haggisaerospace/ardupilot/ardupilot/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/ardupilot/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
+['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/build/CubeBlack', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
 err: /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008004000
 
 yes
@@ -846,12 +846,12 @@ Checking for NEED_CMATH_ISINF_STD_NAMESPACE
           return isinf((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_7c5877c0aef19feba75518c0217b95f4/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_40911abc53eacffe95c643fd9915efab/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_7c5877c0aef19feba75518c0217b95f4/testbuild/CubeBlack/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_40911abc53eacffe95c643fd9915efab/testbuild/CubeBlack/testprog[0m
 
-['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/ardupilot/ardupilot/build/CubeBlack', '-L/home/haggisaerospace/ardupilot/ardupilot/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/ardupilot/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
+['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/build/CubeBlack', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
 err: /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008004000
 
 yes
@@ -868,12 +868,12 @@ Checking for NEED_CMATH_ISNAN_STD_NAMESPACE
           return isnan((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_f028ef8f5f5a4072d5e9262a90003dd8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_97cdd02555623c4207c8d4d6efddf17e/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_f028ef8f5f5a4072d5e9262a90003dd8/testbuild/CubeBlack/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_97cdd02555623c4207c8d4d6efddf17e/testbuild/CubeBlack/testprog[0m
 
-['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/ardupilot/ardupilot/build/CubeBlack', '-L/home/haggisaerospace/ardupilot/ardupilot/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/ardupilot/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
+['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-u_port_lock', '-u_port_unlock', '-u_exit', '-u_kill', '-u_getpid', '-u_errno', '-uchThdExit', '-fno-common', '-nostartfiles', '-mno-thumb-interwork', '-mthumb', '-specs=nano.specs', '-specs=nosys.specs', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/build/CubeBlack', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/ChibiOS/os/common/startup/ARMCMx/compilers/GCC/ld', '-L/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/libraries/AP_HAL_ChibiOS/hwdef/common', '-Wl,--gc-sections,--no-warn-mismatch,--library-path=/ld,--script=ldscript.ld,--defsym=__process_stack_size__=0x2000,--defsym=__main_stack_size__=0x400', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lgcc', '-lm']
 err: /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008004000
 
 yes
@@ -888,7 +888,7 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_61d73049887a33376ab2c851e44d1ea0/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b268d242cde6cfadaaafd4afe21ada0e/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 err: ../../test.cpp:1:20: fatal error: endian.h: No such file or directory
@@ -896,18 +896,18 @@ err: ../../test.cpp:1:20: fatal error: endian.h: No such file or directory
                     ^
 compilation terminated.
 
-from /home/haggisaerospace/ardupilot/ardupilot: Test does not build: Traceback (most recent call last):
-  File "/home/haggisaerospace/ardupilot/ardupilot/modules/waf/waflib/Configure.py", line 584, in run_build
+from /home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk: Test does not build: Traceback (most recent call last):
+  File "/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/waf/waflib/Configure.py", line 584, in run_build
     bld.compile()
-  File "/home/haggisaerospace/ardupilot/ardupilot/modules/waf/waflib/Build.py", line 355, in compile
+  File "/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/waf/waflib/Build.py", line 355, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140576701584880: cxx test.cpp -> test.cpp.1.o}
+	{task 139726615094768: cxx test.cpp -> test.cpp.1.o}
  (run with -v to display more information)
 
 not found
-from /home/haggisaerospace/ardupilot/ardupilot: The configuration failed
+from /home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk: The configuration failed
 ----------------------------------------------
 Checking for header byteswap.h
 ==>
@@ -919,7 +919,7 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_2b0ce29d91d058a146c1da73e12dacde/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_f30ee258e1b171cef911bd4eb7d40208/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 err: ../../test.cpp:1:22: fatal error: byteswap.h: No such file or directory
@@ -927,18 +927,18 @@ err: ../../test.cpp:1:22: fatal error: byteswap.h: No such file or directory
                       ^
 compilation terminated.
 
-from /home/haggisaerospace/ardupilot/ardupilot: Test does not build: Traceback (most recent call last):
-  File "/home/haggisaerospace/ardupilot/ardupilot/modules/waf/waflib/Configure.py", line 584, in run_build
+from /home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk: Test does not build: Traceback (most recent call last):
+  File "/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/waf/waflib/Configure.py", line 584, in run_build
     bld.compile()
-  File "/home/haggisaerospace/ardupilot/ardupilot/modules/waf/waflib/Build.py", line 355, in compile
+  File "/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/waf/waflib/Build.py", line 355, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140576701365736: cxx test.cpp -> test.cpp.1.o}
+	{task 139726614863336: cxx test.cpp -> test.cpp.1.o}
  (run with -v to display more information)
 
 not found
-from /home/haggisaerospace/ardupilot/ardupilot: The configuration failed
+from /home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk: The configuration failed
 ----------------------------------------------
 Checking for HAVE_MEMRCHR
 ==>
@@ -949,7 +949,7 @@ Checking for HAVE_MEMRCHR
           return memrchr((const void *)s, 0, 3) != NULL;
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_8dad7b36b52028ae648653e9824aec54/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_2246b02a4ee3036b708372f30a694052/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=attributes', '-Werror=format-security', '-Werror=enum-compare', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=narrowing', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=type-limits', '-Werror=unused-result', '-Werror=shadow', '-Werror=unused-variable', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-ffunction-sections', '-fdata-sections', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-missing-field-initializers', '-Wno-unused-parameter', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Wno-trigraphs', '-Werror=shadow', '-Werror=return-type', '-Werror=unused-result', '-Werror=narrowing', '-Werror=attributes', '-mcpu=cortex-m4', '-mfpu=fpv4-sp-d16', '-mfloat-abi=hard', '-u_printf_float', '-Wno-cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-fno-exceptions', '-Wall', '-Wextra', '-Wno-sign-compare', '-Wfloat-equal', '-Wpointer-arith', '-Wmissing-declarations', '-Wno-unused-parameter', '-Werror=array-bounds', '-Wfatal-errors', '-Werror=uninitialized', '-Werror=init-self', '-Wframe-larger-than=1024', '-Werror=unused-but-set-variable', '-Wno-missing-field-initializers', '-Wno-trigraphs', '-fno-strict-aliasing', '-fomit-frame-pointer', '-falign-functions=16', '-ffunction-sections', '-fdata-sections', '-fno-strength-reduce', '-fno-builtin-printf', '-fno-builtin-fprintf', '-fno-builtin-vprintf', '-fno-builtin-vfprintf', '-fno-builtin-puts', '-mno-thumb-interwork', '-mthumb', '--specs=nano.specs', '-specs=nosys.specs', '-DCHIBIOS_BOARD_NAME="CubeBlack"', '-fno-rtti', '-fno-threadsafe-statics', '-MMD', '-Wno-error=cast-align', '-DUAVCAN_STM32_CHIBIOS=1', '-DUAVCAN_STM32_NUM_IFACES=2', '-O3', '-I../../../../modules/uavcan/libuavcan/include', '-I../../../../modules/uavcan/libuavcan_drivers/stm32/driver/include', '-DAP_SCRIPTING_CHECKS=1', '-DCONFIG_HAL_BOARD=HAL_BOARD_CHIBIOS', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 err: ../../test.cpp: In function 'int main()':
@@ -958,18 +958,18 @@ err: ../../test.cpp: In function 'int main()':
                                                ^
 compilation terminated due to -Wfatal-errors.
 
-from /home/haggisaerospace/ardupilot/ardupilot: Test does not build: Traceback (most recent call last):
-  File "/home/haggisaerospace/ardupilot/ardupilot/modules/waf/waflib/Configure.py", line 584, in run_build
+from /home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk: Test does not build: Traceback (most recent call last):
+  File "/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/waf/waflib/Configure.py", line 584, in run_build
     bld.compile()
-  File "/home/haggisaerospace/ardupilot/ardupilot/modules/waf/waflib/Build.py", line 355, in compile
+  File "/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/modules/waf/waflib/Build.py", line 355, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140576701584760: cxx test.cpp -> test.cpp.1.o}
+	{task 139726615094528: cxx test.cpp -> test.cpp.1.o}
  (run with -v to display more information)
 
 no
-from /home/haggisaerospace/ardupilot/ardupilot: The configuration failed
+from /home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk: The configuration failed
 ----------------------------------------------
 Checking for program 'python'
 /usr/bin/python
@@ -1020,10 +1020,10 @@ Checking for python version >= 2.7.0
 2.7.12
 ----------------------------------------------
 Source is git repository
-yes
+no
 ----------------------------------------------
 Update submodules
-yes
+no
 ----------------------------------------------
 Checking for program 'git'
 /usr/bin/git

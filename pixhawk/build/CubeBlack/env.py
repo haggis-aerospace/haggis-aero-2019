@@ -1,7 +1,7 @@
 (dp0
 S'DEFAULT_PARAMETERS'
 p1
-S'/home/haggisaerospace/ardupilot/ardupilot/libraries/AP_HAL_ChibiOS/hwdef/CubeBlack/defaults.parm'
+S'/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/libraries/AP_HAL_ChibiOS/hwdef/CubeBlack/defaults.parm'
 p2
 sS'MAIN_STACK'
 p3
@@ -25,7 +25,7 @@ p12
 tp13
 a(S'bootloader.bin'
 p14
-S'/home/haggisaerospace/ardupilot/ardupilot/Tools/bootloaders/CubeBlack_bl.bin'
+S'/home/haggisaerospace/WorkingCode/haggis-aero-2019/pixhawk/Tools/bootloaders/CubeBlack_bl.bin'
 p15
 tp16
 asS'APJ_BOARD_ID'
