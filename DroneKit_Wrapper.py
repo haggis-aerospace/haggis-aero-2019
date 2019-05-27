@@ -17,8 +17,28 @@ class Location:
     heartbeat=False
 
     def __init__(self):
-        self.vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=57600)
-        self.init_alt = self.vehicle.location._alt
+        try:
+            self.vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=57600, heartbeat_timeout=180)
+            vehicle.home_location = vehicle.location.global_frame
+            self.init_alt = self.vehicle.location._alt
+
+            print("\nConnected Successfully")
+            print(" GPS: %s" % vehicle.gps_0)
+            print(" Battery: %s" % vehicle.battery)
+            print(" Last Heartbeat: %s" % vehicle.last_heartbeat)
+            print(" Is Armable?: %s" % vehicle.is_armable)
+            print(" System status: %s" % vehicle.system_status.state)
+            print(" Mode: %s" % vehicle.mode.name)    # settable
+
+        # Bad TTY connection
+        except OSError as e:
+            print('No serial exists!')
+            print(e)
+         # API Error
+        except dronekit.APIException:
+            print('Timeout!')
+
+
 
     def get_location(self):
         self.lat = self.vehicle.location._lat
