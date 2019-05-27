@@ -11,6 +11,7 @@ import gc
 import argparse
 import os
 import platform
+import sys
 
 gc.enable()
 
@@ -63,6 +64,7 @@ def data_stream():
         height = Drone.rel_alt
 
 
+
 def database_write(image_name):
     Database_Controller.collect(height, lat, lon, heading, pitch, roll, image_name)
     processLock.accuire()
@@ -90,6 +92,7 @@ if __name__ == '__main__':
         else:
             os.system('cls')
     try:
+        print('Started Database build process')
         global processLock
         processLock = threading.Lock()
         dsThread = threading.Thread(target=data_stream)
@@ -102,3 +105,5 @@ if __name__ == '__main__':
         print("got Ctrl+C (SIGINT) or exit() is called")
         stopped.set() # signal threads to exit gracefully
         Database_Controller.clean() # close database cleanly
+        print("All processes stopped. Closing python script")
+        sys.exit(0)
