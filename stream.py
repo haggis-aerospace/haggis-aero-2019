@@ -82,7 +82,7 @@ def image_stream(counter):
     db.start()
 
 if __name__ == '__main__':
-    while Drone.check_mode() != args.stmode and Drone.get_altitude() != args.stalt:
+    while Drone.check_mode() != args.stmode and Drone.get_altitude() >= args.stalt:
         print("Drone not at height or correct mode")
         print("Get to {}m to activate, Current Altitude :- {}m, Climb {}m to activate".format(args.stalt, Drone.get_altitude(), args.stalt-Drone.get_altitude()))
         print("Change Mode to {} to activate, Current Mode {}".format(args.stmode, Drone.check_mode()))
