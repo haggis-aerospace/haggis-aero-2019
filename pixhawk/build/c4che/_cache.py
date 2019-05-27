@@ -1,6 +1,6 @@
 AUTOCONFIG = True
 BINDIR = '/usr/bin'
-BOARD = 'CubeBlack'
+BOARD = 'sitl'
 DEBUG = False
 LIBDIR = '/usr/lib'
 PREFIX = '/usr'
