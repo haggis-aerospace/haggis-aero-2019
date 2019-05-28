@@ -3,6 +3,7 @@
 # Responsible for collecting all needed location and position data in a neat little class
 
 from dronekit import connect
+import dronekit
 from numpy import pi
 
 class Location:
@@ -20,17 +21,17 @@ class Location:
     def __init__(self):
         try:
             self.vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=57600, heartbeat_timeout=180)
-            vehicle.home_location = vehicle.location.global_frame
+            self.vehicle.home_location = self.vehicle.location.global_frame
             self.init_alt = self.vehicle.location._alt
-            self.mode = vehicle.mode.name
+            self.mode = self.vehicle.mode.name
 
             print("\nConnected Successfully")
-            print(" GPS: %s" % vehicle.gps_0)
-            print(" Battery: %s" % vehicle.battery)
-            print(" Last Heartbeat: %s" % vehicle.last_heartbeat)
-            print(" Is Armable?: %s" % vehicle.is_armable)
-            print(" System status: %s" % vehicle.system_status.state)
-            print(" Mode: %s" % vehicle.mode.name)    # settable
+            print(" GPS: %s" % self.vehicle.gps_0)
+            print(" Battery: %s" % self.vehicle.battery)
+            print(" Last Heartbeat: %s" % self.vehicle.last_heartbeat)
+            print(" Is Armable?: %s" % self.vehicle.is_armable)
+            print(" System status: %s" % self.vehicle.system_status.state)
+            print(" Mode: %s" % self.vehicle.mode.name)    # settable
 
         # Bad TTY connection
         except OSError as e:
@@ -42,7 +43,7 @@ class Location:
 
 
     def check_mode(self):
-        self.mode = vehicle.mode.name
+        self.mode = self.vehicle.mode.name
         return self.mode
 
     def get_altitude(self):
@@ -55,11 +56,11 @@ class Location:
         self.heading = self.vehicle._heading
         self.pitch = (self.vehicle._pitch/pi) + 0.5
         self.roll = (self.vehicle._roll/pi) + 0.5
-# TODO write code to check for heartbeat
-'''
+    # TODO write code to check for heartbeat
+    '''
     def get_heartbeat(self):
         self.vehicle.
-'''
+    '''
     # TODO remove (only used for testing)
     def print_attributes(self):
         self.get_location()

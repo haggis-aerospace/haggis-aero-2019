@@ -19,13 +19,17 @@ gc.enable()
 global database_mod
 database_mod = False
 
-global imgname
 global lat
 global lon
 global heading
 global pitch
 global roll
 global height
+global imgname
+
+global tlat
+global tlon
+global tchar
 
 stopped = threading.Event()
 
@@ -33,7 +37,7 @@ stopped = threading.Event()
 parser = argparse.ArgumentParser(description='Generates the dataset for the Haggis Target Detection Multiple Input-Output DCNN')
 parser.add_argument('-tlat', type=float, help="Define target latitude coordinates in degrees")
 parser.add_argument('-tlon', type=float, help="Define target longitude coordinates in degrees")
-parser.add_argument('-tchar', type=char, help="Define target character")
+parser.add_argument('-tchar', type=str, help="Define target character")
 parser.add_argument('-stalt', type=float, default=50.0, help="Define dataset creation start altitude")
 parser.add_argument('-stmode', type=str, default='FBWA', help="Define dataset creation start mode")
 args = parser.parse_args()
@@ -41,12 +45,13 @@ args = parser.parse_args()
 args.tchar = args.tchar.upper()
 args.stmode = args.stmode.upper()
 
+tlon = args.tlon
+tlat = args.tlat
+tchar = args.tchar
+
 #image_name_counter
 image_name_counter = 0
 
-#init database handler
-Database_Controller = Database_Handler.Database(args.tlat, args.tlon, args.tchar)
-time.sleep(5)
 
 #Continous DataStream
 Drone = DroneKit_Wrapper.Location()
@@ -54,6 +59,13 @@ Drone = DroneKit_Wrapper.Location()
 time.sleep(5)
 
 def data_stream():
+    global height
+    global lat
+    global lon
+    global heading
+    global pitch
+    global roll
+
     while True:
         Drone.get_location()
         lat = Drone.lat
@@ -64,25 +76,63 @@ def data_stream():
         height = Drone.rel_alt
 
 
+global shouldWrite
+global writeLock
+shouldWrite = False
 
-def database_write(image_name):
-    Database_Controller.collect(height, lat, lon, heading, pitch, roll, image_name)
-    processLock.accuire()
+def database_write():
+
+    global height
+    global lat
+    global lon
+    global heading
+    global pitch
+    global roll
+    global shouldWrite
+    global writeLock
+    global imgname
+
+    global tlat
+    global tlon
+    global tchar
+
+    #init database handler
+    Database_Controller = Database_Handler.Database(args.tlat, args.tlon, args.tchar)
+    time.sleep(5)
+
+    while True:
+        if shouldWrite:
+            Database_Controller.collect(height, lat, lon, heading, pitch, roll, imgname)
+            writeLock.acquire()
+            shouldWrite = False
+            writeLock.release()
+    processLock.acquire()
     database_mod = False
     processLock.release()
 
 
-def image_stream(counter):
-    imgname = image_cap.get_img(counter)
-    processLock.accuire()
-    database_mod = True
-    processLock.release()
-    dbThread = threading.Thread(target=database_write, args=(imgname))
-    dbThread.daemon=True
-    db.start()
+def image_stream(directory, counter):
+    global height
+    global lat
+    global lon
+    global heading
+    global pitch
+    global roll
+    global shouldWrite
+    global writeLock
+    global imgname
+
+    if not shouldWrite:
+        imgname = image_cap.get_img(directory, counter)
+    writeLock.acquire()
+    shouldWrite = True
+    writeLock.release()
+#    dbThread = threading.Thread(target=database_write, args=(imgname, dheight, dlat, dlon, dheading, dpitch, droll))
+#    dbThread.daemon=True
+#    dbThread.start()
 
 if __name__ == '__main__':
-    while Drone.check_mode() != args.stmode and Drone.get_altitude() >= args.stalt:
+    while not (Drone.check_mode() == args.stmode and Drone.get_altitude() >= args.stalt):
         print("Drone not at height or correct mode")
         print("Get to {}m to activate, Current Altitude :- {}m, Climb {}m to activate".format(args.stalt, Drone.get_altitude(), args.stalt-Drone.get_altitude()))
         print("Change Mode to {} to activate, Current Mode {}".format(args.stmode, Drone.check_mode()))
@@ -95,15 +145,21 @@ if __name__ == '__main__':
         print('Started Database build process')
         global processLock
         processLock = threading.Lock()
+        writeLock = threading.Lock()
         dsThread = threading.Thread(target=data_stream)
         dsThread.start()
+
+        dbThread = threading.Thread(target=database_write)
+        dbThread.start()
         while True:
-            image_stream(counter = image_name_counter, save_directory = args.tchar)
+            print("Taking image", image_name_counter)
+            image_stream(args.tchar, image_name_counter)
             image_name_counter+=1
         dsThread.join()
+        dbThread.join()
     except (KeyboardInterrupt, SystemExit):
         print("got Ctrl+C (SIGINT) or exit() is called")
         stopped.set() # signal threads to exit gracefully
-        Database_Controller.clean() # close database cleanly
+        #Database_Controller.clean() # close database cleanly
         print("All processes stopped. Closing python script")
         sys.exit(0)

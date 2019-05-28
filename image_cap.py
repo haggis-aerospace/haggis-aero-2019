@@ -57,7 +57,7 @@ cap = VideoCapture(0)
 #name = name + str(index) + ".avi"
 #out = cv2.VideoWriter(name,cv2.VideoWriter_fourcc('X','V','I','D'), 24, (w,h))
 
-def get_img(counter=0, save_directory):
+def get_img(save_directory, counter):
   #start_time = time.time()
   frame = cap.read()
   frame = imutils.rotate(frame, 270)
@@ -76,7 +76,10 @@ def get_img(counter=0, save_directory):
   #if wait_time < 0:
   #  wait_time=0
   #time.sleep(wait_time)
-  threading.Thread(target=cv2.imwrite, args=('/media/pi/0677794046B427B7/CV/{}/frame{}.BMP'.format(save_directory, counter), frame))
+  if not os.path.isdir("/media/pi/0677794046B427B7/CV/{}".format(save_directory)):
+    os.makedirs("/media/pi/0677794046B427B7/CV/{}".format(save_directory))
+  iThread = threading.Thread(target=cv2.imwrite, args=('/media/pi/0677794046B427B7/CV/{}/frame{}.BMP'.format(save_directory, counter), frame))
+  iThread.start()
   return 'frame{}.BMP'.format(counter)
   #end_time = time.time()
   #frame_rate = 1/(end_time-start_time)
