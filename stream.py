@@ -98,7 +98,7 @@ if __name__ == '__main__':
         dsThread = threading.Thread(target=data_stream)
         dsThread.start()
         while True:
-            image_stream(image_name_counter)
+            image_stream(counter = image_name_counter, save_directory = args.tchar)
             image_name_counter+=1
         dsThread.join()
     except (KeyboardInterrupt, SystemExit):
