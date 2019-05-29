@@ -56,7 +56,7 @@ image_name_counter = 0
 #Continous DataStream
 Drone = DroneKit_Wrapper.Location()
 # TODO sleep until heartbeat is received
-time.sleep(5)
+time.sleep(20)
 
 def data_stream():
     global height

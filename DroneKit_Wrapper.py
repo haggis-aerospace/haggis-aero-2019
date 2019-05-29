@@ -20,7 +20,7 @@ class Location:
 
     def __init__(self):
         try:
-            self.vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=57600, heartbeat_timeout=180)
+            self.vehicle = connect('udpin:localhost:14550', wait_ready=True, baud=57600, heartbeat_timeout=180)
             self.vehicle.home_location = self.vehicle.location.global_frame
             self.init_alt = self.vehicle.location._alt
             self.mode = self.vehicle.mode.name

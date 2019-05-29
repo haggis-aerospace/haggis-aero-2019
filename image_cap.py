@@ -60,7 +60,7 @@ cap = VideoCapture(0)
 def get_img(save_directory, counter):
   #start_time = time.time()
   frame = cap.read()
-  frame = imutils.rotate(frame, 270)
+  frame = imutils.rotate_bound(frame, 270)
   #print(frame.shape[:2])
  # out.write(frame)
   #time.sleep(.5)   # simulate long processing
@@ -76,9 +76,9 @@ def get_img(save_directory, counter):
   #if wait_time < 0:
   #  wait_time=0
   #time.sleep(wait_time)
-  if not os.path.isdir("/media/pi/0677794046B427B7/CV/{}".format(save_directory)):
-    os.makedirs("/media/pi/0677794046B427B7/CV/{}".format(save_directory))
-  iThread = threading.Thread(target=cv2.imwrite, args=('/media/pi/0677794046B427B7/CV/{}/frame{}.BMP'.format(save_directory, counter), frame))
+  if not os.path.isdir("/media/pi/A60F-F5CD/CV/{}".format(save_directory)):
+    os.makedirs("/media/pi/A60F-F5CD/CV/{}".format(save_directory))
+  iThread = threading.Thread(target=cv2.imwrite, args=('/media/pi/A60F-F5CD/CV/{}/frame{}.BMP'.format(save_directory, counter), frame))
   iThread.start()
   return 'frame{}.BMP'.format(counter)
   #end_time = time.time()
