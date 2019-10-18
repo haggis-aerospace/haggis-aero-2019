@@ -76,4 +76,3 @@ bool Mode::enter()
 
     return enter_result;
 }
-

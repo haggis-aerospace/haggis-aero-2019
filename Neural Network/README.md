@@ -18,6 +18,7 @@
 ## Contributers
 
 * Savio Andrade, github: [andradesavio9073](https://github.com/andradesavio9073)
+* Eva Lott, github: [evalott100](https://github.com/evalott100)
 
 ## Table of contents
 

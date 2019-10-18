@@ -1,6 +1,11 @@
 # Haggis aero 2019 repo
 
 ## Ardupilot
+# Changes made by us
+* FTS
+	* Changed mode_circle.cpp to fts system
+
+
 * FTS
 	* ~~edit ardupilot circle mode~~
 	* Program circle as FTS in mission-planner
